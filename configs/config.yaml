@@ -1,0 +1,7 @@
+
+port: "8080"
+backends:
+  - "http://localhost:8081/health"
+  - "http://localhost:9002"
+healthInterval: 10s
+algorithm: round_robin
